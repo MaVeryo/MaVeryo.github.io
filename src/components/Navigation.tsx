@@ -110,13 +110,13 @@ export default function Navigation() {
               <MenuItem onClick={handleMenuClose} component="a" href="#photography">Photography</MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="#contact">Contact</MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="https://github.com/MaVeryo" target="_blank" rel="noopener">
-                <GitHubIcon /> GitHub
+                <GitHubIcon />
               </MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">
-                <LinkedInIcon /> LinkedIn
+                <LinkedInIcon />
               </MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener">
-                <InstagramIcon /> Instagram
+                <InstagramIcon />
               </MenuItem>
             </Menu>
           </>
