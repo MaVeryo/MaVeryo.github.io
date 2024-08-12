@@ -60,6 +60,7 @@ const StyledTab = styled((props: StyledTabProps) => (
   '&.Mui-selected': {
     color: 'white',
   },
+
   '&.Mui-focusVisible': {
     backgroundColor: 'rgba(100, 95, 228, 0.32)',
   },
@@ -102,7 +103,7 @@ export default function Navigation() {
               open={isMenuOpen}
               onClose={handleMenuClose}
             >
-              <MenuItem onClick={handleMenuClose} component="a" href="#home">Home</MenuItem>
+              <MenuItem onClick={handleMenuClose} component="a" href="#home" >Home</MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="#about">About</MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="#projects">Projects</MenuItem>
               <MenuItem onClick={handleMenuClose} component="a" href="#resume">Resume</MenuItem>
@@ -122,15 +123,15 @@ export default function Navigation() {
         ) : (
           <StyledTabs value={value} onChange={handleChange} aria-label="basic tabs example" sx={{ '& .MuiTab-root': { color: 'white', fontSize: '1rem' } }}>
             <Tab icon={<img src={MVlogo} alt="Logo" style={{ width: '60px', height: '60px' }} />} aria-label="github" href="https://maveryo.github.io" target="_blank" rel="noopener" />
-            <StyledTab label="About" {...a11yProps(0)} />
-            <StyledTab label="Projects" {...a11yProps(1)} />
-            <StyledTab label="Resume" {...a11yProps(2)} />
-            <StyledTab label="Photography" {...a11yProps(3)} />
-            <StyledTab label="Contact" {...a11yProps(4)} />
+            <StyledTab  label="About"      sx={{'&:hover': {color: 'rgba(255,255,255,0.8)'}}} {...a11yProps(0)} />
+            <StyledTab label="Projects"    sx={{'&:hover': {color: 'rgba(255,255,255,0.8)'}}} {...a11yProps(1)} />
+            <StyledTab label="Resume"      sx={{'&:hover': {color: 'rgba(255,255,255,0.8)'}}} {...a11yProps(2)} />
+            <StyledTab label="Photography" sx={{'&:hover': {color: 'rgba(255,255,255,0.8)'}}} {...a11yProps(3)} />
+            <StyledTab label="Contact"     sx={{'&:hover': {color: 'rgba(255,255,255,0.8)'}}} {...a11yProps(4)} />
             <Box sx={{ borderBottom: 1, borderColor: 'divider', display: 'flex', marginLeft: '5%' }}>
-              <Tab icon={<GitHubIcon />} aria-label="github" href="https://github.com/MaVeryo" target="_blank" rel="noopener" />
-              <Tab icon={<LinkedInIcon />} aria-label="linkedin" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" />
-              <Tab icon={<InstagramIcon />} aria-label="insta" href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener" />
+              <Tab icon={<GitHubIcon />} aria-label="github" href="https://github.com/MaVeryo" target="_blank" rel="noopener" sx={{'&:hover': {color: '#72A8FD'}}}/>
+              <Tab icon={<LinkedInIcon />} aria-label="linkedin" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" sx={{'&:hover': {color: '#72A8FD'}}}/>
+              <Tab icon={<InstagramIcon />} aria-label="insta" href="https://www.instagram.com/vermama___/" target="_blank" rel="noopener" sx={{'&:hover': {color: '#72A8FD'}}}/>
             </Box>
           </StyledTabs>
         )}
