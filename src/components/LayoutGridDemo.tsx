@@ -1,10 +1,18 @@
 "use client";
-import {LayoutGrid} from "../components/ui/layout-grid";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { useState, useRef, useEffect } from "react";
+import { LayoutGrid } from "../components/ui/layout-grid";
+import BigButton from "../components/BigButton";
 
 export function LayoutGridDemo() {
   return (
-    <div className="h-screen py-20 w-full">
-      <LayoutGrid cards={cards} />
+    <div className="grid">
+      <div className="h-screen py-20 w-full">
+        <LayoutGrid cards={cards} />
+      </div>
+      <div className="flex justify-center items-center h-20">
+        <BigButton text="Photography Portfolio" link="https://google.com" />
+      </div>
     </div>
   );
 }
@@ -67,42 +75,14 @@ const SkeletonFour = () => {
     </div>
   );
 };
-const SkeletonFive = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
-const SkeletonSix = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
 
 const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
@@ -121,21 +101,7 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "md:col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 5,
-    content: <SkeletonFive />,
-    className: "md:col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 6,
-    content: <SkeletonSix />,
-    className: "md:col-span-1",
+    className: "md:col-span-2",
     thumbnail:
       "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },

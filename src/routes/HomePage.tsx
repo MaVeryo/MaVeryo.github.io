@@ -2,6 +2,7 @@
 import { LayoutGridDemo } from "../components/LayoutGridDemo";
 import { MainHeader } from "../components/MainHeader";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import About from "./About";
 
 export default function HomePage() {
   return (
@@ -19,7 +20,7 @@ export default function HomePage() {
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4" 
         />
       </div>
-
+      <About />
       <LayoutGridDemo />
     </div>
   );
