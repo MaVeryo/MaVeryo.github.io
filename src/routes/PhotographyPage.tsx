@@ -31,6 +31,8 @@ const images = [
   ];
 
 export function PhotographyPage() {
+
+
   return(
     
   <div>
