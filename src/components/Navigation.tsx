@@ -144,7 +144,7 @@ export default function Navigation() {
           </>
         ) : (
           <StyledTabs value={value} onChange={handleChange} aria-label="styled tabs example" sx={{ '& .MuiTab-root': { color: 'white', fontSize: '1rem' } }}>
-            <Tab icon={<img src={MVlogo} alt="Logo" style={{ width: '60px', height: '60px' }} />} aria-label="github" href="/" target="_blank" rel="noopener" />
+            <Tab icon={<img src={MVlogo} alt="Logo" style={{ width: '60px', height: '60px' }} />} aria-label="github" href="/" rel="noopener" />
             <StyledTab label="About"        />
             <StyledTab label="Projects"     />
             <StyledTab label="Resume"       />
