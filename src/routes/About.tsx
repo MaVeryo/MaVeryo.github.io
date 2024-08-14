@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
 import PrimaryButton from '../components/PrimaryButton';
 import ParagraphLayout from '../components/ParagraphLayout';
 import MahitPhoto from '../assets/Website Revamp Photos/photos/me.png';
@@ -10,7 +9,6 @@ import SecondaryButton from '../components/SecondaryButton';
 export default function About() {
   return (
     <div>
-      <Navigation />
       <div className="flex flex-col md:flex-row items-center justify-center max-h-screen p-60 -mt-16">
         <div className="md:w-1/2 p-4 pl-40 pt-12">
           <ParagraphLayout
