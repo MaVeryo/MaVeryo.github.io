@@ -13,7 +13,7 @@ const Button = styled.a`
     justify-content: center;
     padding: 10px 0px 10px 5px;
     font-size: 20px;
-    color: black;
+    color: white;
     background-color: #21567D;
     text-decoration: none;
     position: relative;

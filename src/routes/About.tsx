@@ -26,7 +26,7 @@ export default function About() {
           <SecondaryButton text="Contact Me" link="test" />
         </div>
         <div className="md:w-1/2 p-4 relative">
-          <img src={MahitPhoto} alt="Mahit Photo" className="w-[40vw] h-[60vh] object-contain" />
+          <img src={MahitPhoto} alt="Mahit Photo" className="w-[50vw] h-[75vh] object-contain" />
         </div>
       </div>
     </div>
