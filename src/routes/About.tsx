@@ -5,6 +5,8 @@ import ParagraphLayout from '../components/ParagraphLayout';
 import MahitPhoto from '../assets/Website Revamp Photos/photos/me.png';
 import SecondaryButton from '../components/SecondaryButton';
 
+
+
 export default function About() {
   return (
     <div>
