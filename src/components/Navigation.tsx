@@ -107,7 +107,7 @@ export default function Navigation() {
   
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         {isSmallScreen ? (
           <>

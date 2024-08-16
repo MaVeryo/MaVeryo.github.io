@@ -10,24 +10,25 @@ const Button = styled.a`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 24px;
     color: black;
     background-color: #72A8FD;
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    width:314px;
+    transition: width 0.3s ease-in-out;
 
 
-
-    &:hover .arrow {
-        margin-left: 55px;
+    &:hover {
+        width:324px;
     }
 
     &::after {
         content: '';
         position: absolute;
-        bottom: -30%;
+        bottom: -10%;
         right: 0;
         width: 0;
         height: 0;
@@ -38,7 +39,7 @@ const Button = styled.a`
     &::before {
         content: '';
         position: absolute;
-        bottom: -30%;
+        bottom: -10%;
         left: 0;
         width: 0;
         height: 0;
