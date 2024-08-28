@@ -9,7 +9,7 @@ import SecondaryButton from '../components/SecondaryButton';
 export default function About() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row items-center justify-center max-h-screen p-8 md:p-60 -mt-16">
+      <div className="flex flex-col md:flex-row items-center justify-center md:max-h-screen p-8 md:p-60 -mt-16">
         <div className="md:w-1/2 p-20 md:pl-40 pt-12">
           <ParagraphLayout
             header="Hi, I'm Mahit"
