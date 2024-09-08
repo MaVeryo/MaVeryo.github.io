@@ -8,10 +8,10 @@ import BigButton from "../components/BigButton";
 
 export default function HomePage() {
   return (
-    <div >
+    <div className="">
     
 
-      <div className=" flex h-screen">
+      <div className="flex h-screen">
         <MainHeader />
 
         <KeyboardArrowDownIcon 
@@ -23,8 +23,9 @@ export default function HomePage() {
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4" 
         />
       </div>
-
+      <div className="sm:p-20">
       <About />
+      </div>
 
       <LayoutGridDemo />
 

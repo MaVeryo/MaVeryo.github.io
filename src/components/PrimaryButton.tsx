@@ -36,7 +36,7 @@ const Button = styled.a`
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 0 30px 30px;
+        border-width: 0 0px 30px 30px;
         border-color: transparent transparent #05070A transparent;
     }
 `;
