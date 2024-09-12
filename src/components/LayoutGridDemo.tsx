@@ -6,11 +6,11 @@ import BigButton from "../components/BigButton";
 
 export function LayoutGridDemo() {
   return (
-    <div className="grid">
+    <div className="grid pt-5">
       <div className="h-screen py-20 w-full">
         <LayoutGrid cards={cards} />
       </div>
-      <div className="flex justify-center items-center h-20">
+      <div className="flex justify-center items-center h-1">
         <BigButton text="Photography Portfolio" link="https://google.com" />
       </div>
     </div>

@@ -27,9 +27,12 @@ export default function HomePage() {
       <About />
       </div>
 
-      <LayoutGridDemo />
+      <div className="p-15">
+        <LayoutGridDemo />
+      </div>
 
-  
+          <div>
+          <div className="pt-28 sm:pt-0">
           <ProjectParagraph 
             header="Hospital Kiosk" 
             paragraph="This is a web application for a hospital
@@ -41,8 +44,9 @@ export default function HomePage() {
             buttonLink="https://google.com"
             phone={true}
           />
+          </div>
 
-   
+          <div className="-mt-28 sm:pt-0">
           <ProjectParagraph 
             header="ChordStorm" 
             paragraph="This web application integrates the Spotify API and OpenAI API to create a personalized music experience. 
@@ -52,9 +56,12 @@ export default function HomePage() {
             buttonLink="https://google.com"
             phone={false}
           />
+          </div>
+          
          
-        <div className="max-w-screen flex justify-center">
+        <div className="max-w-screen flex justify-center -mt-28">
          <BigButton text="More Projects" link="/"/>
+         </div>
          </div>
     </div>
   );

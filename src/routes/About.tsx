@@ -4,12 +4,10 @@ import ParagraphLayout from '../components/ParagraphLayout';
 import MahitPhoto from '../assets/Website Revamp Photos/photos/me.png';
 import SecondaryButton from '../components/SecondaryButton';
 
-
-
 export default function About() {
   return (
     <div className="max-w-fit mx-auto overflow-hidden md:flex md:items-center">
-      <div className="flex sticky flex-col md:flex-row md:items-center justify-center">
+      <div className="flex flex-col md:flex-row md:items-center justify-center">
         <div className="md:w-1/2 pl-14 md:p-20 lg:pl-40">
           <ParagraphLayout
             header="Hi, I'm Mahit"
@@ -25,8 +23,12 @@ export default function About() {
           <br/>
           <SecondaryButton text="Contact Me" link="test" />
         </div>
-        <div className="w-1/2 md:-mt-0 -mt-32 mx-auto ">
-          <img src={MahitPhoto} alt="Mahit Photo" className="w-[50vw] h-[75vh] object-contain" />
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+          <img 
+            src={MahitPhoto} 
+            alt="Mahit Photo" 
+            className="w-[80vw] h-[50vh] sm:w-[50vw] sm:h-[75vh] lg:w-[30vw] lg:h-[50vh] object-contain" 
+          />
         </div>
       </div>
     </div>
