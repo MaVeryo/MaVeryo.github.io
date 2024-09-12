@@ -6,9 +6,9 @@ import SecondaryButton from '../components/SecondaryButton';
 
 export default function About() {
   return (
-    <div className="max-w-fit mx-auto overflow-hidden md:flex md:items-center">
-      <div className="flex flex-col md:flex-row md:items-center justify-center">
-        <div className="md:w-1/2 pl-14 md:p-20 lg:pl-40">
+    <div className="max-w-fit mx-auto overflow-hidden lg:flex md:items-center">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-center">
+        <div className="lg:w-1/2 pl-14 lg:p-20 lg:pl-40">
           <ParagraphLayout
             header="Hi, I'm Mahit"
             paragraph="I am a Junior studying at Worcester Polytechnic Institute. 
@@ -27,7 +27,7 @@ export default function About() {
           <img 
             src={MahitPhoto} 
             alt="Mahit Photo" 
-            className="w-[80vw] h-[50vh] sm:w-[50vw] sm:h-[75vh] lg:w-[30vw] lg:h-[50vh] object-contain" 
+            className="w-[80vw] h-[50vh] sm:w-[50vw] sm:h-[75vh] object-contain" 
           />
         </div>
       </div>

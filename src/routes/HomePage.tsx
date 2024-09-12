@@ -5,6 +5,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import About from "./About";
 import ProjectParagraph from "../components/ProjectParagraph";
 import BigButton from "../components/BigButton";
+import { ExperienceScroll } from "../components/ExperienceScroll";
 
 export default function HomePage() {
   return (
@@ -27,9 +28,7 @@ export default function HomePage() {
       <About />
       </div>
 
-      <div className="p-15">
-        <LayoutGridDemo />
-      </div>
+
 
           <div>
           <div className="pt-28 sm:pt-0">
@@ -59,10 +58,22 @@ export default function HomePage() {
           </div>
           
          
-        <div className="max-w-screen flex justify-center -mt-28">
+        <div className="max-w-screen flex justify-center -mt-16 sm:-mt-28">
          <BigButton text="More Projects" link="/"/>
          </div>
          </div>
+
+
+         <div className="p-15">
+        <LayoutGridDemo />
+      </div>
+          
+      <div className="w-full p-20 mt-14 ">
+      <ExperienceScroll/>
+      </div>
+
+
+
     </div>
   );
 }
