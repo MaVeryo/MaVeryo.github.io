@@ -18,6 +18,7 @@ const Button = styled.a`
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 
     .arrow {
         margin-left: 50px;

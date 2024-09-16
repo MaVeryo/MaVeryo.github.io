@@ -24,7 +24,7 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
                 {phone && (
                     <img src={Phone} alt="Phone" className="w-[40vw] h-[40vh] sm:h-auto sm:w-auto ml-[12.5rem] mr-[12.5rem]" />
                 )}
-                <div className={`max-w-[100vw] p-10`} style={{ width: '834px', height: '329px', marginLeft: phone ? '20px' : '0' }}>
+                <div className={``} style={{marginLeft: phone ? '20px' : '0' }}>
                     <h1 className={`text-white text-[40px] pb-1`}>{header}</h1>
                     <div className="overflow-hidden bg-white w-[10vh] h-[1px]"></div>
                     <p className={`text-white pt-10 text-[16px]`}>{paragraph}</p>
@@ -32,7 +32,7 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
                     <PrimaryButton text={buttonText} link={buttonLink} />
                 </div>
                 {!phone && (
-                    <img src={MacBook} alt="MacBook" className="w-full sm:w-[40vw] h-auto sm:h-[50vh] pt-32 sm:pt-5 pr-10" />
+                    <img src={MacBook} alt="MacBook" className="pt-32 sm:pt-5 pr-10" />
                 )}
             </div>
         </div>
