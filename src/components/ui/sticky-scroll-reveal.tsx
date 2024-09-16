@@ -19,8 +19,8 @@ export const StickyScroll = ({
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-     //target: ref,
-    container: ref,
+    target: ref,
+    //container: ref,
     offset: ["start start", "end start"],
   });
   const cardLength = content.length;
