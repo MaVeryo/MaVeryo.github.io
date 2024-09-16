@@ -2,6 +2,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../lib/utils";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 export const FlipWords = ({
   words,
@@ -12,6 +14,7 @@ export const FlipWords = ({
   duration?: number;
   className?: string;
 }) => {
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
@@ -50,7 +53,7 @@ export const FlipWords = ({
             damping: 10,
           }}
           className={cn(
-            "z-10 inline-block text-6xl relative text-left text-white dark:text-neutral-100 px-2 ",
+            `z-10 inline-block relative text-left text-white dark:text-neutral-100 px-2 ${isSmallScreen ? 'text-4xl' : 'text-6xl'}`,
             className
           )}
           key={currentWord}

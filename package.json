@@ -20,6 +20,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@tabler/icons": "^1.115.0",
     "@tabler/icons-react": "^3.11.0",
+    "@vitejs/plugin-vue": "^5.1.2",
     "aceternity-ui": "^0.2.1",
     "clsx": "^2.1.1",
     "express": "^4.19.2",
@@ -28,6 +29,7 @@
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
     "styled-components": "^6.1.12",
     "tailwind-merge": "^2.5.0"
   },
