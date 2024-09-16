@@ -20,7 +20,7 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
 }) => {
     return (
         <div className="flex justify-center items-center h-screen">
-            <div className="w-[75%] flex flex-col md:flex-row items-center justify-center">
+            <div className="w-[50%] flex flex-col md:flex-row items-center justify-center">
                 {phone && (
                     <img src={Phone} alt="Phone" className="w-[40vw] h-[40vh] sm:h-auto sm:w-auto ml-[12.5rem] mr-[12.5rem]" />
                 )}

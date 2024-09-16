@@ -4,6 +4,7 @@ import HomePage from '../src/routes/HomePage';
 import About from '../src/routes/About';
 import {PhotographyPage} from '../src/routes/PhotographyPage';
 import Navigation from './components/Navigation';
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/photography" element={<PhotographyPage />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

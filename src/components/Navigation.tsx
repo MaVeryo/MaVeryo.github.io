@@ -63,6 +63,8 @@ export default function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const isMenuOpen = Boolean(anchorEl);
   const navigate = useNavigate();
+  const [showNav, setShowNav] = React.useState(true);
+  const [lastScrollY, setLastScrollY] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -98,8 +100,28 @@ export default function Navigation() {
     setAnchorEl(null);
   };
 
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY < lastScrollY) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', position: 'fixed', top: showNav ? '0' : '-100px', transition: 'top 0.3s' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <div className="block md:hidden">
           <IconButton
