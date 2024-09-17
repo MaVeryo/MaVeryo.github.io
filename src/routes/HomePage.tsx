@@ -68,8 +68,11 @@ export default function HomePage() {
         <LayoutGridDemo />
       </div>
           
-      <div className="w-full p-20 mt-14 ">
+      <div className="w-full mt-14 grid pb-20">
       <ExperienceScroll/>
+        <div className="flex justify-center items-center h-1">
+      <BigButton text="Resume" link="/"/>
+      </div>
       </div>
 
 

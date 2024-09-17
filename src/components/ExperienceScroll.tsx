@@ -3,19 +3,19 @@ import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Experience",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Over the summer of 2024 I had the opportunity to intern at Collins Aerospace in VT, for Software Engineering mainly utilizing Python for data analytics and LabVIEW for embedded programming. I learned a lot about electrical engineering as well, as one of the projects I focused on was primary focused on being able to understand circuits on a unit from a customer. Also during the school year I work as a CMS assistant for my universities website!",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+        Experience
       </div>
     ),
   },
   {
-    title: "Real time changes",
+    title: "Leadership",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "I am a member of SASE, Society of Asian Scientists and Engineers, and I was an Events Coordinator for my universities chapter. With this I planned and managed events of over 100 attendees and planned professional development conference trips. I am also currently a Project Manager, leading a small team for our Pan Asian Committee for planning an annual festival.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
@@ -29,22 +29,22 @@ const content = [
     ),
   },
   {
-    title: "Version control",
+    title: "Skills",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "I have learned a variety of languages from when I started programming. These include, Java, Python, JavaScript, Type Script, SQL, and C/C++. Those are the primary ones I have done work in but I have learned others. I also use a variety of development tools to help me with my projects such as, React, Github, AWS, and Figma. ",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+        Skills
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Future Projects and Work",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "I am currently seeking a Summer ‘25 internship in Software Engineering, Data Analytics, or Project Management. I want to grow as an individual in these fields to be able to make a meaningful impact.I am currently making mock-ups in Figma of a future project of a GPT-powered finance partner that will help you plan out what you need to help you achieve your goals..",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        Future Projects and Work
       </div>
     ),
   },
@@ -53,7 +53,7 @@ const content = [
 
 export function ExperienceScroll() {
   return (
-    <div className="p-10">
+    <div className="pt-10 pb-10">
       <StickyScroll  content={content} />
     </div>
   );
