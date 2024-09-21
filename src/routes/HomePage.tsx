@@ -5,7 +5,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import About from "./About";
 import ProjectParagraph from "../components/ProjectParagraph";
 import BigButton from "../components/BigButton";
-import { ExperienceScroll } from "../components/ExperienceScroll";
+import { ResumeExperience } from "../components/ResumeExperience";
 
 export default function HomePage() {
   return (
@@ -29,32 +29,35 @@ export default function HomePage() {
       </div>
 
 
+      <div className="w-full mt-14 grid p-20 pb-20">
+      <ResumeExperience/>      
+      </div>
 
-          <div>
-          <div className="pt-28 sm:pt-0">
-          <ProjectParagraph 
-            header="Hospital Kiosk" 
-            paragraph="This is a web application for a hospital
-            that allows people to find paths, request different services,
-            and view information about the hospital. It was built using React,
-            Utilized Docker containers for deployment, and AWS EC2 instances for temporary
-            hosting."
-            buttonText="Github Repo"
-            buttonLink="https://google.com"
-            phone={true}
-          />
-          </div>
+          <div className="p-20">
+            <div className="pt-28 sm:pt-0">
+              <ProjectParagraph 
+                header="Hospital Kiosk" 
+                paragraph="This is a web application for a hospital
+                that allows people to find paths, request different services,
+                and view information about the hospital. It was built using React,
+                Utilized Docker containers for deployment, and AWS EC2 instances for temporary
+                hosting."
+                buttonText="Github Repo"
+                buttonLink="https://google.com"
+                phone={true}
+              />
+            </div>
 
-          <div className="-mt-28 sm:pt-0">
-          <ProjectParagraph 
-            header="ChordStorm" 
-            paragraph="This web application integrates the Spotify API and OpenAI API to create a personalized music experience. 
-            It fetches the weather in your location, and with the help of a GPT-powered music assistant, 
-            suggests songs tailored to the current weather and your music preferences. "
-            buttonText="Github Repo"
-            buttonLink="https://google.com"
-            phone={false}
-          />
+            <div className="mt-28 sm:-mt-28 pt-0">
+              <ProjectParagraph 
+                header="ChordStorm" 
+                paragraph="This web application integrates the Spotify API and OpenAI API to create a personalized music experience. 
+                It fetches the weather in your location, and with the help of a GPT-powered music assistant, 
+                suggests songs tailored to the current weather and your music preferences. "
+                buttonText="Github Repo"
+                buttonLink="https://google.com"
+                phone={false}
+              />
           </div>
           
          
@@ -64,16 +67,11 @@ export default function HomePage() {
          </div>
 
 
-         <div className="p-15">
+         <div className="p-20 pb-16">
         <LayoutGridDemo />
       </div>
           
-      <div className="w-full mt-14 grid pb-20">
-      <ExperienceScroll/>
-        <div className="flex justify-center items-center h-1">
-      <BigButton text="Resume" link="/"/>
-      </div>
-      </div>
+
 
 
 
