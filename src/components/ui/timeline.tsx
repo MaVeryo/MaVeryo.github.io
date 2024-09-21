@@ -37,12 +37,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+        <h2 className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
+          Highlights from my Resume
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+        <p className="text-neutral-400 dark:text-neutral-100 text-sm md:text-base max-w-sm">
+          You can check my resume out&nbsp;  
+          <a target="_blank" 
+          className="text-blue-500 underline font-medium"
+          href="https://www.linkedin.com/in/mahit-verma/overlay/1723603163963/single-media-viewer/?profileId=ACoAAD1HsQkBn0G8CkmYz3i-UsLCzp3rseBSpc0">
+          here
+          </a>. 
+          Below are some highlights from what I have worked on
+          and what I am working on in the future.
         </p>
       </div>
 

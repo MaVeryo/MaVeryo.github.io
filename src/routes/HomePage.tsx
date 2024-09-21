@@ -70,11 +70,6 @@ export default function HomePage() {
          <div className="p-20 pb-16">
         <LayoutGridDemo />
       </div>
-          
-
-
-
-
     </div>
   );
 }
