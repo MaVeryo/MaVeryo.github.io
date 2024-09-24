@@ -13,7 +13,7 @@ const ExperienceParagraph: React.FC<ExperienceParagraphProps> = ({
 
 }) => {
     return (
-        <div className="flex justify-center items-center sm:h-[45vh] sm:w-[75vh]">
+        <div className="max-w-fit mx-auto overflow-hidden lg:flex md:items-center">
             <div className="w-[75%] flex flex-col md:flex-row items-center justify-center">
                 <div className={`max-w-[100vw] pt-20`}>
                     <h1 className={`text-white text-[40px] pb-1`}>{header}</h1>
