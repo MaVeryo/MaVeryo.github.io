@@ -21,21 +21,20 @@ export function ResumeExperience() {
               height={500}
               className="rounded-lg object-fit h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            <p className="text-neutral-400 text-xs md:text-sm font-normal mb-8">
-              At <b className="text-white">Collins Aerospace</b> I was working with a Sustaining Test Engineering Team.
-              I was primarily focused in <b className="text-white">LabVIEW</b> as well as becoming <b className="text-white"> multi-disciplined and learning Electrical Engineering. </b> 
-              My main projects were around debugging and fixing test sets for production units. I had developed
-              <b className="text-white"> Python scripts</b> taking in thousands files and parsing the data to identify patterns and narrow down issues.
-              With this I was able to utilize Labview and <b className="text-white"> debug code </b> speeding up testing and help with hardware debugging.
-              I had worked with another intern to develop a fault-check procedure catching faults across all future production units.
-            </p>
-            <p className="text-neutral-400 text-xs md:text-sm font-normal mb-8">
-              At <b className="text-white">Worcester Polytechnic Institute</b> I work on the <b className="text-white">Content Management Systems Team.</b>
-              I am an Assistant that handles tickets to support the WPI website. From revamping pages to fixing broken links, I have worked on a variety of tasks.
-              As a CMS Assistant I have worked with <b className="text-white">Drupal, WordPress, and Monsido</b> to help maintain the WPI website.
-              I have also helped the Development Team help resolve bugs that are more technical in nature. By using my prior knowledge of <b className="text-white">HTML, CSS, and JavaScript</b> 
-              I have been able to help the team resolve issues faster and more efficiently.
-            </p>
+            <div className="text-neutral-400 text-xs md:text-sm font-normal mb-8">
+            <li>Worked with the <b>Sustaining Test Engineering</b> Team at Collins Aerospace.</li>
+            <li>Primarily focused on <b>LabVIEW</b> and learning <b>Electrical Engineering.</b></li>
+            <li>Main responsibilities included <b> debugging</b> and fixing <b> test sets</b> for production units.</li>
+            <li>Developed <b>Python</b> scripts to parse data from thousands of files, identifying patterns to pinpoint issues.</li>
+            <li>Collaborated with another intern to develop a fault-check procedure to catch faults across future production units.</li>
+            </div>
+            <div className="text-neutral-400 text-xs md:text-sm font-normal mb-8">
+              <li><b>CMS Assistant</b> on the Content Management Systems Team at <b> Worcester Polytechnic Institute.</b></li>
+              <li>Handles tickets to support the <b> WPI website</b>, working on tasks like revamping pages and fixing broken links.</li>
+              <li>Works with <b> Drupal, WordPress, and Monsido</b> to maintain the WPI website.</li>
+              <li>Uses prior knowledge of <b> HTML, CSS, and JavaScript</b> to resolve issues faster and more efficiently.</li>
+              <li>Assists the Development Team in resolving more technical bugs.</li>
+            </div>
             <img
               src={WPI}
               alt="startup template"
@@ -51,13 +50,14 @@ export function ResumeExperience() {
       title: "Skills",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-neutral-200 text-lg font-semibold mb-8">
+            I have a variety of skills ranging from different programming langauges to development tools and data tools. 
+            I have learned these through school, work, personal projects, and self taught!
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+          <p className="text-neutral-200 text-lg font-normal mb-8">
+            <u>Coursework:</u> <b>Software Engineering, Algorithms, Operating Systems,</b> Social Implications of Information Processing, 
+            Machine Organization and Assembly Language, Foundations of Computer Science, Data Analytsis for Decision Making, 
+            Intro to Data Science, and Object Oriented Design
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img        
