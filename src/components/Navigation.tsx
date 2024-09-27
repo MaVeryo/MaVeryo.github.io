@@ -121,9 +121,9 @@ export default function Navigation() {
   }, [lastScrollY]);
 
   return (
-    <Box sx={{ width: '100%', position: 'fixed', top: showNav ? '0' : '-100px', transition: 'top 0.3s' }}>
+    <Box sx={{  width: '100%', zIndex:'2147483647', position: 'fixed', top: showNav ? '0' : '-100px', transition: 'top 0.3s'}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <div className="block md:hidden">
+        <div className="block md:hidden z-40">
           <IconButton
             edge="start"
             color="inherit"
@@ -181,7 +181,7 @@ export default function Navigation() {
             </MenuItem>
           </Menu>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block z-40">
           <StyledTabs
             value={value}
             onChange={handleChange}
