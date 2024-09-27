@@ -20,11 +20,11 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
 }) => {
     return (
         <div className="flex justify-center items-center h-screen">
-            <div className="w-[50%] h-[100%] flex flex-col md:flex-row items-center justify-center">
+            <div className=" h-[100%] flex flex-col md:flex-row items-center justify-center">
                 {phone && (
                     <Phone/>
                 )}
-                <div className={``} style={{marginLeft: phone ? '20px' : '0' }}>
+                <div className="w-[80%]" style={{ marginLeft: !phone ? '20rem' : '0', marginRight: phone ? '20rem' : '0' }}>
                     <h1 className={`text-white text-[40px] pb-1`}>{header}</h1>
                     <div className="overflow-hidden bg-white w-[10vh] h-[1px]"></div>
                     <p className={`text-white pt-10 text-[16px]`}>{paragraph}</p>
