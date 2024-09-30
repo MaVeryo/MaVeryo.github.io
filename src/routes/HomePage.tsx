@@ -38,7 +38,7 @@ export default function HomePage() {
       </section>
 
       <section>
-      <div className="sm:p-20" ref={nextSectionRef}>
+      <div className="sm:p-20" ref={nextSectionRef} id="about">
       <About />
       </div>
       </section>

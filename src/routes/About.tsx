@@ -1,10 +1,13 @@
 import React from 'react';
+
 import PrimaryButton from '../components/PrimaryButton';
 import ParagraphLayout from '../components/ParagraphLayout';
 import MahitPhoto from '../assets/Website Revamp Photos/photos/me.png';
 import SecondaryButton from '../components/SecondaryButton';
 
 export default function About() {
+
+
   return (
     <div className="max-w-fit mx-auto overflow-hidden lg:flex md:items-center pt-16">
       <div className="flex flex-col lg:flex-row lg:items-center justify-center">

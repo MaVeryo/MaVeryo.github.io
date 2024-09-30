@@ -67,25 +67,30 @@ export default function Navigation() {
   const [lastScrollY, setLastScrollY] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
     switch (newValue) {
       case 0:
         navigate('/');
+        setValue(newValue); 
         break;
       case 1:
         navigate('/about');
+        setValue(newValue); 
         break;
       case 2:
         navigate('/projects');
+        setValue(newValue); 
         break;
       case 3:
-        navigate('/resume');
+        
+        window.open('https://www.linkedin.com/in/mahit-verma/overlay/1723603163963/single-media-viewer/?profileId=ACoAAD1HsQkBn0G8CkmYz3i-UsLCzp3rseBSpc0', '_blank');
         break;
       case 4:
         navigate('/photography');
+        setValue(newValue); 
         break;
       case 5:
         navigate('/contact');
+        setValue(newValue); 
         break;
       default:
         break;
@@ -143,7 +148,10 @@ export default function Navigation() {
             <MenuItem onClick={handleMenuClose} component="a" href="#projects">
               Projects
             </MenuItem>
-            <MenuItem onClick={handleMenuClose} component="a" href="#resume">
+            <MenuItem onClick={handleMenuClose} component="a" 
+            href="https://www.linkedin.com/in/mahit-verma/overlay/1723603163963/single-media-viewer/?profileId=ACoAAD1HsQkBn0G8CkmYz3i-UsLCzp3rseBSpc0e" 
+            target="_blank" 
+            rel="noopener">
               Resume
             </MenuItem>
             <MenuItem onClick={handleMenuClose} component="a" href="#photography">

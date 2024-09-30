@@ -35,9 +35,10 @@ export function PhotographyPage() {
 
   return(
     
-  <div>
+  <section className="!snap-none">
+    
   <ParallaxScroll images={images} />
-  </div>
+  </section>
 
 );
 }
