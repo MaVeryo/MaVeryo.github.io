@@ -6,8 +6,8 @@ import Phone from "../components/Phone";
 interface ProjectParagraphProps {
     header: string;
     paragraph: string;
-    buttonText: string;
-    buttonLink: string;
+    buttonText?: string;
+    buttonLink?: string;
     phone: boolean;
 }
 
@@ -29,7 +29,7 @@ const ProjectParagraph: React.FC<ProjectParagraphProps> = ({
                     <div className="overflow-hidden bg-white w-[10vh] h-[1px]"></div>
                     <p className={`text-white pt-10 text-[16px]`}>{paragraph}</p>
                     <br />
-                    <PrimaryButton text={buttonText} link={buttonLink} />
+                    {buttonText && <PrimaryButton text={buttonText} link={buttonLink || '#'} />}
                 </div>
                 {!phone && (
                     <Mac />
