@@ -43,11 +43,12 @@ export default function HomePage() {
       </div>
       </section>
 
-      <section> 
+      <section>
       <div className="w-full mt-14 grid p-20 pb-20">
       <ResumeExperience/>      
       </div>
       </section>
+
 
           
           <div className="p-20">

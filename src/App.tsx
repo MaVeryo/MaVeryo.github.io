@@ -16,7 +16,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/photography" element={<PhotographyPage />} />
       </Routes>
+      <section>
       <Footer/>
+      </section>
     </Router>
   );
 }

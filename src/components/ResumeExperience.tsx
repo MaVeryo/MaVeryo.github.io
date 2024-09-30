@@ -5,9 +5,11 @@ import WPI from "../assets/Website Revamp Photos/photos/WPI.png"
 
 export function ResumeExperience() {
   const data = [
+    
     {
       title: "Experience",
       content: (
+        <section>
         <div>
           <p className="text-neutral-200 text-lg font-semibold mb-8 ">
             Over the summer of '24, I interned at Collins Aerospace as a Software Engineer. <br/>
@@ -42,11 +44,14 @@ export function ResumeExperience() {
             />
           </div>
         </div>
+        </section>
       ),
     },
+    
     {
       title: "Skills, Interests, and Coursework",
       content: (
+        <section>
         <div>
           <p className="text-neutral-200 text-lg font-semibold mb-8">
             I have a variety of skills ranging from different programming langauges to development tools and data tools. 
@@ -125,11 +130,13 @@ export function ResumeExperience() {
             </div>
             
       </div>
+      </section>
       ),
     },
     {
       title: "Leadership Experience",
       content: (
+        <section>
         <div>
           <p className="text-neutral-200 text-lg font-semibold mb-10">
             Leadership Experience at WPI
@@ -176,6 +183,7 @@ export function ResumeExperience() {
             </div>
           </div>
         </div>
+        </section>
       ),
     },
   ];
