@@ -12,6 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import { useNavigate } from 'react-router-dom';
 
+
 interface StyledTabsProps {
   children?: React.ReactNode;
   value: number;
@@ -66,6 +67,7 @@ export default function Navigation() {
   const [showNav, setShowNav] = React.useState(true);
   const [lastScrollY, setLastScrollY] = React.useState(0);
 
+
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     switch (newValue) {
       case 0:
@@ -73,15 +75,14 @@ export default function Navigation() {
         setValue(newValue); 
         break;
       case 1:
-        navigate('/about');
+        navigate('/#about');
         setValue(newValue); 
         break;
       case 2:
-        navigate('/projects');
+        navigate('/#projects');
         setValue(newValue); 
         break;
       case 3:
-        
         window.open('https://www.linkedin.com/in/mahit-verma/overlay/1723603163963/single-media-viewer/?profileId=ACoAAD1HsQkBn0G8CkmYz3i-UsLCzp3rseBSpc0', '_blank');
         break;
       case 4:

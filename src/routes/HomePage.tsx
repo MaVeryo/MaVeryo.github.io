@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { LayoutGridDemo } from "../components/LayoutGridDemo";
 import { MainHeader } from "../components/MainHeader";
@@ -8,14 +8,31 @@ import About from "../components/AboutHomePage";
 import ProjectParagraph from "../components/ProjectParagraph";
 import BigButton from "../components/BigButton";
 import { ResumeExperience } from "../components/ResumeExperience";
+import { useLocation } from 'react-router-dom';
 
 export default function HomePage() {
   const nextSectionRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
 
   // Scroll handler
   const scrollToNextSection = () => {
     nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+  
+  useEffect(() => {
+    if (location.hash === '#about') {
+      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+
+  useEffect(() => {
+    if (location.hash === '#projects') {
+      projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
 
 
   return (
@@ -37,8 +54,8 @@ export default function HomePage() {
       </div>
       </section>
 
-      <section>
-      <div className="sm:p-20" ref={nextSectionRef} id="about">
+      <section ref={nextSectionRef}>
+      <div className="sm:p-20" ref={aboutRef} id="about">
       <About />
       </div>
       </section>
@@ -51,7 +68,7 @@ export default function HomePage() {
 
 
           
-          <div className="p-20">
+          <div className="p-20" ref={projectsRef}>
             <section>
             <div className="pt-28 sm:pt-0">
               <ProjectParagraph 
@@ -84,7 +101,7 @@ export default function HomePage() {
           
          
         <div className="max-w-screen flex justify-center -mt-16 sm:-mt-28">
-         <BigButton text="More Projects" link="/"/>
+         <BigButton text="More Projects" link="/moreprojects"/>
          </div>
          </div>
 
@@ -92,7 +109,7 @@ export default function HomePage() {
          <div className="p-20 pb-16">
         <LayoutGridDemo />
           <div className="flex justify-center items-center h-1">
-            <BigButton text="Photography Portfolio" link="https://google.com" />
+            <BigButton text="Photography Portfolio" link="/photography" />
           </div>
       </div>
       </section>
