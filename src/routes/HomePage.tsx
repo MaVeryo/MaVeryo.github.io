@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 import { LayoutGridDemo } from "../components/LayoutGridDemo";
 import { MainHeader } from "../components/MainHeader";

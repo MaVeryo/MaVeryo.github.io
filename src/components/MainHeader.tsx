@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { FlipWords } from "../components/ui/flip-words";
 import { Box } from "@mui/material";
 
