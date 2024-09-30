@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
 body {
     background-color: #05070A;
     font-family: 'Ubuntu', sans-serif;}

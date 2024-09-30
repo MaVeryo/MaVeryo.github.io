@@ -2,7 +2,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
-import BigButton from "../components/BigButton";
 
 export function LayoutGridDemo() {
   return (
@@ -10,9 +9,7 @@ export function LayoutGridDemo() {
       <div className="h-screen py-20 w-full">
         <LayoutGrid cards={cards} />
       </div>
-      <div className="flex justify-center items-center h-1">
-        <BigButton text="Photography Portfolio" link="https://google.com" />
-      </div>
+
     </div>
   );
 }

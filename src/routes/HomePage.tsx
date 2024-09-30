@@ -1,17 +1,27 @@
 "use client";
+import React, { useRef } from 'react';
+
 import { LayoutGridDemo } from "../components/LayoutGridDemo";
 import { MainHeader } from "../components/MainHeader";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import About from "./About";
+import About from "../components/AboutHomePage";
 import ProjectParagraph from "../components/ProjectParagraph";
 import BigButton from "../components/BigButton";
 import { ResumeExperience } from "../components/ResumeExperience";
 
 export default function HomePage() {
+  const nextSectionRef = useRef<HTMLDivElement>(null);
+
+  // Scroll handler
+  const scrollToNextSection = () => {
+    nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <div className="">
     
-
+      <section>
       <div className="flex h-screen">
         <MainHeader />
 
@@ -21,19 +31,28 @@ export default function HomePage() {
             fontSize: '2rem',
             cursor: 'pointer',
           }} 
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4" 
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4"
+          onClick={scrollToNextSection}
         />
       </div>
-      <div className="sm:p-20">
+      </section>
+
+      <section>
+      <div className="sm:p-20" ref={nextSectionRef} id="about">
       <About />
       </div>
+      </section>
 
-
+      <section>
       <div className="w-full mt-14 grid p-20 pb-20">
       <ResumeExperience/>      
       </div>
+      </section>
 
+
+          
           <div className="p-20">
+            <section>
             <div className="pt-28 sm:pt-0">
               <ProjectParagraph 
                 header="Hospital Kiosk" 
@@ -47,7 +66,9 @@ export default function HomePage() {
                 phone={true}
               />
             </div>
+            </section>
 
+            <section>
             <div className="mt-28 sm:-mt-28 pt-0">
               <ProjectParagraph 
                 header="ChordStorm" 
@@ -59,6 +80,7 @@ export default function HomePage() {
                 phone={false}
               />
           </div>
+          </section>
           
          
         <div className="max-w-screen flex justify-center -mt-16 sm:-mt-28">
@@ -66,10 +88,14 @@ export default function HomePage() {
          </div>
          </div>
 
-
+         <section>
          <div className="p-20 pb-16">
         <LayoutGridDemo />
+          <div className="flex justify-center items-center h-1">
+            <BigButton text="Photography Portfolio" link="https://google.com" />
+          </div>
       </div>
+      </section>
     </div>
   );
 }

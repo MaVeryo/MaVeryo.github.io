@@ -1,19 +1,16 @@
 import React from 'react';
-
-import PrimaryButton from '../components/PrimaryButton';
-import ParagraphLayout from '../components/ParagraphLayout';
+import PrimaryButton from './PrimaryButton';
+import ParagraphLayout from './ParagraphLayout';
 import MahitPhoto from '../assets/Website Revamp Photos/photos/me.png';
-import SecondaryButton from '../components/SecondaryButton';
+import SecondaryButton from './SecondaryButton';
 
 export default function About() {
-
-
   return (
-    <div className="max-w-fit mx-auto overflow-hidden lg:flex md:items-center pt-16">
+    <div className="max-w-fit mx-auto overflow-hidden lg:flex md:items-center">
       <div className="flex flex-col lg:flex-row lg:items-center justify-center">
         <div className="lg:w-1/2 pl-14 lg:p-20 lg:pl-40">
           <ParagraphLayout
-            header="More About Me"
+            header="Hi, I'm Mahit"
             paragraph="I am a Junior studying at Worcester Polytechnic Institute. 
             I am majoring in Computer Science and Data Science with a passion for 
             Software Engineering and Project Management. I am seeking a Summer ‘25 Internship in these fields."

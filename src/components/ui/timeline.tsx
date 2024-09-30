@@ -51,7 +51,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           and what I am working on in the future.
         </p>
       </div>
-
+      
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -75,6 +75,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
           </div>
         ))}
+        
         <div
           style={{
             height: height + "px",
@@ -90,6 +91,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           />
         </div>
       </div>
+      
     </div>
+    
   );
 };
