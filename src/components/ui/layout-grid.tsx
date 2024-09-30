@@ -1,8 +1,8 @@
 "use client";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { useState, useRef, useEffect } from "react";
+import  { useState } from "react";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 
 type Card = {

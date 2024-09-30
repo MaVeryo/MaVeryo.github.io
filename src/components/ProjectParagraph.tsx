@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import PrimaryButton from './PrimaryButton';
 import Mac from "../components/Mac";
 import Phone from "../components/Phone";
