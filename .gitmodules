@@ -1,4 +1,4 @@
 [submodule "dist"]
 	path = dist
-	url = .\\dist\\
+	url = https://github.com/MaVeryo/Maveryo.github.io.git
 	branch = gh-pages
