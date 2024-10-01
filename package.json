@@ -2,7 +2,7 @@
   "name": "mahit-website2.0",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://maveryo.github.io/mahit-website2.0",
+  "homepage": "https://maveryo.github.io/maveryo.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
