@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { LayoutGridDemo } from "../components/LayoutGridDemo";
 import { MainHeader } from "../components/MainHeader";
@@ -9,12 +9,29 @@ import ProjectParagraph from "../components/ProjectParagraph";
 import BigButton from "../components/BigButton";
 import { ResumeExperience } from "../components/ResumeExperience";
 import { useLocation } from 'react-router-dom';
+import { Box, Modal, Typography } from '@mui/material';
+
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 export default function HomePage() {
   const nextSectionRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+
+  const [open, setOpen] = React.useState(true);
+  const handleClose = () => setOpen(false);
 
 
   // Scroll handler
@@ -37,9 +54,31 @@ export default function HomePage() {
 
   return (
     <div className="">
-    
+      
       <section>
       <div className="flex h-screen">
+
+        
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            <p className="font-bold">This website is still under work!</p>
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            I am still currently working on updating the website. You can 
+            still browse and see my current progress!
+            If certain links or buttons do not work please check back later. 
+            Any questions contact me at <a className="text-blue-700" href="mailto:mverma@wpi.edu">mverma@wpi.edu</a>
+          </Typography>
+        </Box>
+      </Modal>
+
+
         <MainHeader />
 
         <KeyboardArrowDownIcon 
